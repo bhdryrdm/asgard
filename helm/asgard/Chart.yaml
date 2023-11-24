@@ -1,6 +1,6 @@
 apiVersion: v2
 name: asgard
-description: A Helm chart for Kubernetes Test
+description: A Helm chart for Kubernetes Test 3 
 
 # A chart can be either an 'application' or a 'library' chart.
 #

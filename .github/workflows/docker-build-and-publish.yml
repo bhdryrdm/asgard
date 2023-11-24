@@ -49,4 +49,6 @@ jobs:
       # Build and push Docker image with Buildx (don't push on PR)
       # https://github.com/docker/build-push-action
       - name: Push the Docker image
-        run: docker push bhdryrdm/asgard:${GITHUB_RUN_NUMBER} --all-tags
+        run: |
+          docker push bhdryrdm/asgard:${GITHUB_RUN_NUMBER}
+          docker push bhdryrdm/asgard:latest

@@ -52,3 +52,13 @@ jobs:
         run: |
           docker push bhdryrdm/asgard:${GITHUB_RUN_NUMBER}
           docker push bhdryrdm/asgard:latest
+      
+      - name: Update values.yaml
+        run: |
+          cd helm/asgard
+          sed -i 's|tag:.*|tag: '${GITHUB_RUN_NUMBER}'|' values.yaml 
+          git config --global user.name 'GitHub Actions'
+          git config --global user.email 'bhdryrdm@gmail.com'
+          git add values.yaml
+          git commit -m "Update values.yaml"
+          git push

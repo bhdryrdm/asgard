@@ -7,7 +7,8 @@ name: Docker
 
 on:
   push:
-    paths: [ "helm/**" ]
+    branches: ["main"]
+    paths-ignore: [ "helm/**" ]
 
 env:
   # Use docker.io for Docker Hub if empty

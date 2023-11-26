@@ -15,6 +15,7 @@
 |[<img src="https://www.fairwinds.com/hubfs/goldilocks_bfw_color.png" width="100px" max-width="100%" height="auto" />](https://www.fairwinds.com/hubfs/goldilocks_bfw_color.png) | Goldilocks    | https://goldilocks.bhdryrdm.com.tr	     |
 |[<img src="https://camo.githubusercontent.com/21017bcdf60b658e5719e8d4b8ebf4ba4c1115ea907f2d8190427a82f8979eaf/68747470733a2f2f706f6c617269732e646f63732e6661697277696e64732e636f6d2f696d672f706f6c617269732d6c6f676f2e706e67" width="100px" max-width="100%" height="auto" />](https://camo.githubusercontent.com/21017bcdf60b658e5719e8d4b8ebf4ba4c1115ea907f2d8190427a82f8979eaf/68747470733a2f2f706f6c617269732e646f63732e6661697277696e64732e636f6d2f696d672f706f6c617269732d6c6f676f2e706e67) | Polaris       | https://polaris.bhdryrdm.com.tr         |
 |[<img src="https://miro.medium.com/v2/resize:fit:1400/1*JCrtvuZgUBlUr4plUuSLMg.png" width="100px" max-width="100%" height="auto" />](https://miro.medium.com/v2/resize:fit:1400/1*JCrtvuZgUBlUr4plUuSLMg.png) | Kubeshark     | https://kubeshark.bhdryrdm.com.tr       |
+|[<img src="https://miro.medium.com/v2/resize:fit:1400/1*4M4OghuybPhjRsLxhrNsGA.png" width="100px" max-width="100%" height="auto" />](https://miro.medium.com/v2/resize:fit:1400/1*4M4OghuybPhjRsLxhrNsGA.png) | Grafana       | https://grafana.bhdryrdm.com.tr         |
 
 ## License
 

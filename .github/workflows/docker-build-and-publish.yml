@@ -33,7 +33,7 @@ jobs:
 
       - name: Build the Docker image
         run: docker build . --file ./AsgardProject/Dockerfile --tag bhdryrdm/asgard:${GITHUB_RUN_NUMBER} --tag bhdryrdm/asgard:latest
-
+      
       # Login against a Docker registry except on PR
       # https://github.com/docker/login-action
       - name: Log into registry ${{ env.REGISTRY }}
@@ -59,6 +59,18 @@ jobs:
         with:
           repository: 'bhdryrdm/asgard'
           token: ${{ secrets.TOKEN }}
+          
+      - name: Run Trivy vulnerability scanner
+        uses: aquasecurity/trivy-action@master
+        with:
+          image-ref: 'docker.io/bhdryrdm/asgard:latest'
+          format: 'sarif'
+          output: 'trivy-results.sarif'
+
+      - name: Upload Trivy scan results to GitHub Security tab
+        uses: github/codeql-action/upload-sarif@v2
+        with:
+          sarif_file: 'trivy-results.sarif'
       
       - name: Update values.yaml
         run: |

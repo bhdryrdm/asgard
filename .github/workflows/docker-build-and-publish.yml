@@ -59,8 +59,13 @@ jobs:
         with:
           repository: 'bhdryrdm/asgard'
           token: ${{ secrets.TOKEN }}
-          
       
+      - name: SonarQube Scan
+        uses: kitabisa/sonarqube-action@v1.2.0
+        with:
+          host: ${{ secrets.SONARQUBE_HOST }}
+          login: ${{ secrets.SONARQUBE_TOKEN }}
+                
       - name: Update values.yaml
         run: |
           cd helm/asgard
@@ -70,3 +75,4 @@ jobs:
           git add values.yaml
           git commit -m "Update values.yaml"
           git push
+    
